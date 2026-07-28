@@ -1,0 +1,17 @@
+<script>
+const carrito = {
+    productos: [
+        { nombre: "splash", precio: 30 },
+        { nombre: "rubor", precio: 20 },
+        { nombre: "sombras", precio: 300 }
+    ]
+};
+
+let total = 0;
+
+for (let i = 0; i < carrito.productos.length; i++) {
+    total += carrito.productos[i].precio;
+}
+
+console.log("el total es:$" + total);
+</script>

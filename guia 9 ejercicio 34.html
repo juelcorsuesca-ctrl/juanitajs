@@ -1,0 +1,13 @@
+<script>
+    function crearGeneradorId() {
+  let id = 0;
+  return function() {
+    id += 5;
+    return id;
+  };
+}
+
+const siguienteId = crearGeneradorId();
+console.log(siguienteId()); // 
+console.log(siguienteId()); // 
+</script>   

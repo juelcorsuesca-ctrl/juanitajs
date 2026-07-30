@@ -1,0 +1,25 @@
+<script>
+    const numero = 42;
+try {
+  numero(); // Lanza TypeError porque un numero no es una funcion
+} catch (error) {
+  console.log(error.name + ": " + error.message);
+}
+
+</script>
+<script>
+    try {
+  const arr = new Array(-5); // Lanza RangeError porque el tamano del arreglo no puede ser negativo
+} catch (error) {
+  console.log(error.name + ": " + error.message);
+}
+
+</script>
+<script>
+    try {
+  eval("const x = ;"); // Lanza SyntaxError porque falta un valor despues del signo igual
+} catch (error) {
+  console.log(error.name + ": " + error.message);
+}
+
+</script>
